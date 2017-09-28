@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font: 16px "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hint-panel {
+	display: none;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    background-color: #df252c;
+	-webkit-animation: fade .6s;
+	-moz-animation: fade .6s;
+	animation: fade .6s;
+}
+
+
+.hint-arrow-top {
+    z-index: 30;
+    right: 300px;
+    top: 300px;
+}
+
+.hint-panel .hint-arrow-top::before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 150ms ease-out transform;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #df252c;
+    top: -10px;
+    right: 19px;
+}
+
+.hint-panel .hint-title {
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.hint-panel {
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    background-color: #df252c;
+}
+
+.hint-panel .hint-description {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.hint-panel .button-box {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hint-panel .button-box button.not-now {
+    border: 1px solid white;
+    background-color: #df252c;
+    color: white;
+}
+
+.hint-panel .button-box button {
+    border: none;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 15px;
+    background-color: rgba(255,255,255,0.95);
+    color: #df252c;
+    transition: 50ms ease-out all;
+}
+
+.button {
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 20px;
+    border: 1px solid #444;
+    color: #000;
+    background: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    height: 30px;
+    font-family: "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    align-items: flex-start;
+    text-align: center;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    margin: 0em;
+    font: 13.3333px Arial;
+    -webkit-writing-mode: horizontal-tb;
+}
