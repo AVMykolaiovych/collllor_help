@@ -2,37 +2,90 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font: 16px "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     color: #000;
-    -webkit-font-smoothing: antialiased;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 * {
     box-sizing: border-box;
 }
 
-.hint-panel {
+/*Styles of the hints*/
+.collllor__help {
 	display: none;
     position: absolute;
     width: 300px;
-    padding: 20px;
-    text-align: left;
+    padding: 20px 30px;
+    text-align: center;
     color: white;
-    background-color: #df252c;
+    background-color: #4366b8;
 	-webkit-animation: fade .6s;
 	-moz-animation: fade .6s;
 	animation: fade .6s;
 }
 
-
-.hint-arrow-top {
+/*Hints location on the page (correction)*/
+.collllor__help-first {
     z-index: 30;
-    right: 300px;
-    top: 300px;
+    right: 485px;
+    top: 285px;
 }
 
-.hint-panel .hint-arrow-top::before {
+.collllor__help-second {
+    z-index: 30;
+    right: 835px;
+    top: 670px;
+}
+
+.collllor__help-third {
+    z-index: 30;
+    right: 355px;
+    top: 670px;
+}
+
+.collllor__help-fourth {
+    z-index: 30;
+    left: 335px;
+    top: 770px;
+}
+
+.collllor__help-fifth {
+    z-index: 30;
+    left: 335px;
+    top: 835px;
+}
+
+.collllor__help-sixth {
+    z-index: 30;
+    left: 430px;
+    top: 835px;
+}
+
+.collllor__help-seventh {
+    z-index: 30;
+    left: 370px;
+    top: 910px;
+}
+
+.collllor__help-last {
+    z-index: 30;
+    left: 370px;
+    top: 1130px;
+}
+/*End of hints location on the page (correction)*/
+
+/*Styles of help icon*/
+.collllor__help-icon {
+    display: block;
+    position: fixed;
+    top: 150px;
+    right: 50px;
+    z-index: 31;
+}
+
+/*Styles of the hint triangle */
+.collllor__help:before {
     content: " ";
     position: absolute;
     width: 0;
@@ -40,12 +93,28 @@ html, body {
     transition: 150ms ease-out transform;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #df252c;
+    border-bottom: 10px solid #4366b8;
     top: -10px;
-    right: 19px;
+    right: 145px;
 }
 
-.hint-panel .hint-title {
+/*Styles of the last hint triangle */
+.collllor__help-last:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 150ms ease-out transform;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #4366b8;
+    top: 218px;
+    right: 145px;
+}
+
+/*Styles elements inside the hints*/
+.collllor__help .collllor__help-title {
     font-weight: 500;
     font-size: 18px;
     font-style: normal;
@@ -53,23 +122,15 @@ html, body {
     margin-bottom: 15px;
 }
 
-.hint-panel {
-    position: absolute;
-    width: 300px;
-    padding: 20px;
-    text-align: left;
-    color: white;
-    background-color: #df252c;
-}
-
-.hint-panel .hint-description {
+.collllor__help .collllor__help-description {
     font-size: 14px;
     font-style: normal;
     line-height: 18px;
     margin-bottom: 15px;
+    text-align: left;
 }
 
-.hint-panel .button-box {
+.collllor__help .collllor__help-button {
     position: relative;
     margin-top: 20px;
     width: 100%;
@@ -77,7 +138,6 @@ html, body {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     -webkit-align-self: flex-end;
-    -ms-flex-item-align: end;
     align-self: flex-end;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -90,19 +150,19 @@ html, body {
     align-items: center;
 }
 
-.hint-panel .button-box button.not-now {
+.collllor__help .collllor__help-button button.not-now {
     border: 1px solid white;
-    background-color: #df252c;
+    background-color: #4366b8;
     color: white;
 }
 
-.hint-panel .button-box button {
+.collllor__help .collllor__help-button button {
     border: none;
     height: 35px;
     line-height: 35px;
     margin-left: 15px;
-    background-color: rgba(255,255,255,0.95);
-    color: #df252c;
+    background-color: white;
+    color: #4366b8;
     transition: 50ms ease-out all;
 }
 
@@ -117,7 +177,7 @@ html, body {
     font-size: 14px;
     line-height: 28px;
     height: 30px;
-    font-family: "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 500;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -129,10 +189,10 @@ html, body {
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
-    text-indent: 0px;
+    text-indent: 0;
     text-shadow: none;
     display: inline-block;
-    margin: 0em;
-    font: 13.3333px Arial;
+    margin: 0;
     -webkit-writing-mode: horizontal-tb;
 }
+/*End of styles elements inside the hints*/
