@@ -2,54 +2,179 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<title>COLLLLOR | PRINT MARKETPLACE</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="path/to/image.jpg">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<!--<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">-->
-	<!--<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">-->
-	<!--<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-	<link rel="stylesheet" href="help.css">
+    <meta charset="utf-8">
+    <title>COLLLLOR | PRINT MARKETPLACE</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="help.css">
 </head>
 
 <body>
-<!-- <span data-reactid=".0.0.0.5"> -->
-	<div id='hint' class="hint-panel hint-arrow-top" data-reactid=".0.0.0.5.$=10">
-		<div data-reactid=".0.0.0.5.$=10.0">
-			<div class="hint-title" data-reactid=".0.0.0.5.$=10.0.0">
-				<span data-reactid=".0.0.0.5.$=10.0.0.0"> </span>
-				<span data-reactid=".0.0.0.5.$=10.0.0.1">Это ваш новый профиль</span>
-				<span data-reactid=".0.0.0.5.$=10.0.0.2"> </span>
-			</div>
-			<div class="hint-description" data-reactid=".0.0.0.5.$=10.0.1">
-				<span data-reactid=".0.0.0.5.$=10.0.1.0"> </span>
-				<span data-reactid=".0.0.0.5.$=10.0.1.1">Все, что вы читаете, находится здесь.</span>
-			</div>
-			<div class="button-box" data-reactid=".0.0.0.5.$=10.0.2">
-				<button class="button not-now" label="Понятно" data-reactid=".0.0.0.5.$=10.0.2.0" onclick="document.getElementById('hint').style.display='none';">
-					<span data-reactid=".0.0.0.5.$=10.0.2.0.0">Понятно</span>
-				</button>
-				<button class="button" label="Далее" data-reactid=".0.0.0.5.$=10.0.2.1">
-					<span data-reactid=".0.0.0.5.$=10.0.2.1.0">Далее</span>
-				</button>
-			</div>
-		</div>
-	</div>
-<!-- </span> -->
 
-	<script src="help.js"></script>
-	<script type="text/javascript">
-	var delay_popup = 1000;
-	setTimeout("document.getElementById('hint').style.display='block'", delay_popup);
-</script>
+<section>
+    <div class="collllor__help-icon">
+        <img src="hints-icon.png" alt="help">
+    </div>
+
+    <div class="collllor__help collllor__help-first">
+        <div class="collllor__help-box">
+            <div class="collllor__help-title">
+                <span>Welcome to a bidding page!</span>
+            </div>
+            <div class="collllor__help-description">
+				<span>The description of the product may be very close to what you can do. If your materials are
+					slightly differ, still bid with your specs below.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-first">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-second">
+        <div class="collllor__help-box">
+            <div class="collllor__help-description">
+				<span>Specify your average turnaround. Your prices will be offered to other buyers unless
+					you remove the product from your account.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-second">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-third">
+        <div class="collllor__help-box">
+            <div class="collllor__help-description">
+                <span>Pick your shipping carrier for automated shipping cost calculator.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-third">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-fourth">
+        <div class="collllor__help-box">
+            <div class="collllor__help-description">
+				<span>Here you list your specification that differ from the description above.
+					Name your limits and special terms.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-fourth">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-fifth">
+        <div class="collllor__help-box">
+            <div class="collllor__help-title">
+                <span>Quantity tabs</span>
+            </div>
+            <div class="collllor__help-description">
+                <span>Pick the tab with the right order sizes: from 1-48 items, or from 50-100,000.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-fifth">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-sixth">
+        <div class="collllor__help-box">
+            <div class="collllor__help-title">
+                <span>Books, Magazines tab</span>
+            </div>
+            <div class="collllor__help-description">
+                <span>For booklets and products with a number of pages 6 and more, use “multipages” tab.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-sixth">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-seventh">
+        <div class="collllor__help-box">
+            <div class="collllor__help-title">
+                <span>How to quote</span>
+            </div>
+            <div class="collllor__help-description">
+				<span>Add your price to all quantities you can offer. Choose ether you add weight - we automatically
+					calculate the shipping cost (US only), or you can add flat shipping price. add 0 in the fixed H&S
+					box for free shipping.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button not-now">
+                    <span>Not Now</span>
+                </button>
+                <button class="button button-seventh">
+                    <span>Continue</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collllor__help collllor__help-last">
+        <div class="collllor__help-box">
+            <div class="collllor__help-title">
+                <span>Add Collllor fees.</span>
+            </div>
+            <div class="collllor__help-description">
+				<span>Collllor takes 7% from each order. Make sure you have it covered. You can also use this fields
+					for every price changes. The number applies to all entered prices.</span>
+            </div>
+            <div class="collllor__help-button">
+                <button class="button button-last">
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="jquery.min.js"></script>
+<script src="jquery_cookie.js"></script>
+<script src="help.js"></script>
+
 </body>
 </html>
