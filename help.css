@@ -91,6 +91,7 @@ h1 {
     top: 150px;
     right: 50px;
     z-index: 31;
+    cursor: pointer;
 }
 
 /*Styles of the hint triangle */
