@@ -5,7 +5,7 @@ html, body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #000;
-    background: #ffd4db;
+    background: #ecfcd5;
 }
 
 h1 {
@@ -114,10 +114,9 @@ h1 {
     width: 0;
     height: 0;
     transition: 150ms ease-out transform;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid #4366b8;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #4366b8 transparent transparent transparent;
     top: 218px;
     right: 145px;
 }
