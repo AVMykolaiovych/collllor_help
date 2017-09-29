@@ -108,6 +108,7 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $($toElement).offset().top + $offset
         }, $speed);
+        console.log($($toElement).offset().top + $offset);
         if ($focusElement) $($focusElement).focus();
     });
 });

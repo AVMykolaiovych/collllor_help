@@ -5,6 +5,13 @@ html, body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #000;
+    background: #ffd4db;
+}
+
+h1 {
+    text-align: center;
+    color: #4366b8;
+    margin-top: 0;
 }
 
 * {
@@ -19,6 +26,7 @@ html, body {
     padding: 20px 30px;
     text-align: center;
     color: white;
+    margin-bottom: 20px;
     background-color: #4366b8;
 	-webkit-animation: fade .6s;
 	-moz-animation: fade .6s;
@@ -29,49 +37,50 @@ html, body {
 .collllor__help-first {
     z-index: 30;
     right: 485px;
-    top: 285px;
+    top: 305px;
 }
 
 .collllor__help-second {
     z-index: 30;
     right: 835px;
-    top: 670px;
+    top: 690px;
+
 }
 
 .collllor__help-third {
     z-index: 30;
     right: 355px;
-    top: 670px;
+    top: 690px;
 }
 
 .collllor__help-fourth {
     z-index: 30;
     left: 335px;
-    top: 770px;
+    top: 790px;
 }
 
 .collllor__help-fifth {
     z-index: 30;
     left: 335px;
-    top: 835px;
+    top: 855px;
 }
 
 .collllor__help-sixth {
     z-index: 30;
     left: 430px;
-    top: 835px;
+    top: 855px;
 }
 
 .collllor__help-seventh {
     z-index: 30;
     left: 370px;
-    top: 910px;
+    top: 930px;
 }
 
 .collllor__help-last {
     z-index: 30;
     left: 370px;
-    top: 1130px;
+    top: 1150px;
 }
 /*End of hints location on the page (correction)*/
 
