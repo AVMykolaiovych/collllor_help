@@ -38,13 +38,6 @@ $(document).ready(function(){
     helpIcon.click(function() {
         helpFirst.css('display', 'block');
         if(helpFirst.css('display') == 'block') {
-            helpSecond.css('display', 'none');
-            helpThird.css('display', 'none');
-            helpFourth.css('display', 'none');
-            helpFifth.css('display', 'none');
-            helpSixth.css('display', 'none');
-            helpSeventh.css('display', 'none');
-            helpLast.css('display', 'none');
             helpIcon.css('display', 'none');
         }
     });
@@ -54,13 +47,6 @@ $(document).ready(function(){
         helpSecond.css('display', 'block');
         if(helpSecond.css('display') == 'block') {
             helpFirst.css('display', 'none');
-            helpThird.css('display', 'none');
-            helpFourth.css('display', 'none');
-            helpFifth.css('display', 'none');
-            helpSixth.css('display', 'none');
-            helpSeventh.css('display', 'none');
-            helpLast.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
     });
 
@@ -68,14 +54,7 @@ $(document).ready(function(){
     $(".button-second").click(function() {
         helpThird.css('display', 'block');
         if(helpThird.css('display') == 'block') {
-            helpFirst.css('display', 'none');
             helpSecond.css('display', 'none');
-            helpFourth.css('display', 'none');
-            helpFifth.css('display', 'none');
-            helpSixth.css('display', 'none');
-            helpSeventh.css('display', 'none');
-            helpLast.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
     });
 
@@ -83,14 +62,7 @@ $(document).ready(function(){
     $(".button-third").click(function() {
         helpFourth.css('display', 'block');
         if(helpFourth.css('display') == 'block') {
-            helpFirst.css('display', 'none');
-            helpSecond.css('display', 'none');
             helpThird.css('display', 'none');
-            helpFifth.css('display', 'none');
-            helpSixth.css('display', 'none');
-            helpSeventh.css('display', 'none');
-            helpLast.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
     });
 
@@ -98,14 +70,7 @@ $(document).ready(function(){
     $(".button-fourth").click(function() {
         helpFifth.css('display', 'block');
         if(helpFifth.css('display') == 'block') {
-            helpFirst.css('display', 'none');
-            helpSecond.css('display', 'none');
-            helpThird.css('display', 'none');
             helpFourth.css('display', 'none');
-            helpSixth.css('display', 'none');
-            helpSeventh.css('display', 'none');
-            helpLast.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
     });
 
@@ -113,14 +78,7 @@ $(document).ready(function(){
     $(".button-fifth").click(function() {
         helpSixth.css('display', 'block');
         if(helpSixth.css('display') == 'block') {
-            helpFirst.css('display', 'none');
-            helpSecond.css('display', 'none');
-            helpThird.css('display', 'none');
-            helpFourth.css('display', 'none');
             helpFifth.css('display', 'none');
-            helpSeventh.css('display', 'none');
-            helpLast.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
     });
 
@@ -128,14 +86,7 @@ $(document).ready(function(){
     $(".button-sixth").click(function() {
         helpSeventh.css('display', 'block');
         if(helpSeventh.css('display') == 'block') {
-            helpFirst.css('display', 'none');
-            helpSecond.css('display', 'none');
-            helpThird.css('display', 'none');
-            helpFourth.css('display', 'none');
-            helpFifth.css('display', 'none');
             helpSixth.css('display', 'none');
-            helpLast.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
     });
 
@@ -143,15 +94,21 @@ $(document).ready(function(){
     $(".button-seventh").click(function() {
         helpLast.css('display', 'block');
         if(helpLast.css('display') == 'block') {
-            helpFirst.css('display', 'none');
-            helpSecond.css('display', 'none');
-            helpThird.css('display', 'none');
-            helpFourth.css('display', 'none');
-            helpFifth.css('display', 'none');
-            helpSixth.css('display', 'none');
             helpSeventh.css('display', 'none');
-            helpIcon.css('display', 'none');
         }
+    });
+
+    $("[data-scroll-to]").click(function() {
+        var $this = $(this),
+            $toElement      = $this.attr('data-scroll-to'),
+            $focusElement   = $this.attr('data-scroll-focus'),
+            $offset         = $this.attr('data-scroll-offset') * 1 || 0,
+            $speed          = $this.attr('data-scroll-speed') * 1 || 500;
+
+        $('html, body').animate({
+            scrollTop: $($toElement).offset().top + $offset
+        }, $speed);
+        if ($focusElement) $($focusElement).focus();
     });
 });
 
